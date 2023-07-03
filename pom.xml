@@ -204,9 +204,9 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <surefire.options />
+    <surefire.options/>
     <projectVersion>${project.version}</projectVersion>
-    <antlr4.version>4.11.1</antlr4.version>
+    <antlr4.version>4.13.0</antlr4.version>
     <maven.site.plugin.version>3.12.1</maven.site.plugin.version>
     <maven.spotbugs.plugin.version>4.7.3.0</maven.spotbugs.plugin.version>
     <maven.pmd.plugin.version>3.21.0</maven.pmd.plugin.version>
@@ -584,7 +584,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute />
+                    <execute/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -612,7 +612,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -625,7 +625,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute />
+                    <execute/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -1281,7 +1281,7 @@
                 <requireMavenVersion>
                   <version>3.3.9</version>
                 </requireMavenVersion>
-                <dependencyConvergence />
+                <dependencyConvergence/>
                 <!-- we can not use this as it require same version for all dependencies -->
                 <!--
                 <enforceBytecodeVersion>
@@ -1474,9 +1474,9 @@
             </goals>
             <configuration>
               <target>
-                <property name="mvn.project.build.directory" value="${project.build.directory}" />
-                <property name="mvn.runtime_classpath" refid="maven.runtime.classpath" />
-                <ant antfile="config/ant-phase-verify.xml" />
+                <property name="mvn.project.build.directory" value="${project.build.directory}"/>
+                <property name="mvn.runtime_classpath" refid="maven.runtime.classpath"/>
+                <ant antfile="config/ant-phase-verify.xml"/>
               </target>
             </configuration>
           </execution>
@@ -2174,8 +2174,8 @@
                 </goals>
                 <configuration>
                   <target>
-                    <property name="mvn.project.build.directory" value="${project.build.directory}" />
-                    <ant antfile="config/ant-phase-verify-sevntu.xml" />
+                    <property name="mvn.project.build.directory" value="${project.build.directory}"/>
+                    <ant antfile="config/ant-phase-verify-sevntu.xml"/>
                   </target>
                 </configuration>
               </execution>
@@ -4887,7 +4887,7 @@
               <executable>.ci/eclipse-compiler-javac.sh</executable>
               <classpathScope>test</classpathScope>
               <arguments>
-                <classpath />
+                <classpath/>
                 <argument>${java.version}</argument>
               </arguments>
             </configuration>
